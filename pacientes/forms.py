@@ -6,7 +6,9 @@ class PacienteForm(forms.ModelForm):
         model = Paciente
         fields = [
             'name',
+            'identificacion'
         ]
         labels = {
             'name': 'Name',
+            'identificacion': 'Identificacion',
         }
