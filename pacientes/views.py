@@ -27,4 +27,4 @@ def paciente_create(request):
     context = {
         'form': form,
     }
-    return render(request, 'Paciente/PacienteCreate.html', context)
+    return render(request, 'Pacientes/PacienteCreate.html', context)
