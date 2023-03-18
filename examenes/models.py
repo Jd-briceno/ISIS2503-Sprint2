@@ -7,4 +7,4 @@ class Examen(models.Model):
     dateTime = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return '%s %s' % (self.descripcion)
+        return '%s %s' % (self.paciente, self.descripcion)

@@ -6,16 +6,12 @@ class ExamenForm(forms.ModelForm):
         model = Examen
         fields = [
             'paciente',
-            'value',
-            'unit',
-            'place',
+            'descripcion',
             #'dateTime',
         ]
 
         labels = {
             'paciente' : 'Paciente',
-            'value' : 'Value',
-            'unit' : 'Unit',
-            'place' : 'Place',
+            'descripcion' : 'Descripcion',
             #'dateTime' : 'Date Time',
         }

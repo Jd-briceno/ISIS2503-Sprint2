@@ -27,9 +27,7 @@
                         <thead>
                         <tr style="color:#0E2EB0">
                             <th font color="red">Paciente</th>
-                            <th>Value</th>
-                            <th>Unit</th>
-                            <th>Place</th>
+                            <th>Descripcion</th>
                             <th>Date Time</th>
                         </tr>
                         </thead>
@@ -37,10 +35,8 @@
 
                         {% for examen in examen_list %}
                         <tr>
-                            <td>{{ examen.variable.name }}</td>
-                            <td>{{ examen.value }}</td>
-                            <td>{{ examen.unit }}</td>
-                            <td>{{ examen.place }}</td>
+                            <td>{{ examen.paciente.name }}</td>
+                            <td>{{ examen.descripcion }}</td>
                             <td>{{ examen.dateTime }}</td>
                         </tr>
                         {% endfor %}
